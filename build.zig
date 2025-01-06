@@ -6,7 +6,7 @@ pub fn build(b: *std.Build) !void {
 
     const vaxis = b.dependency("vaxis", .{ .target = target, .optimize = optimize });
 
-    const exe = b.addExecutable(.{ .name = "vaxis-test", .root_source_file = b.path("src/main.zig"), .target = target, .optimize = optimize });
+    const exe = b.addExecutable(.{ .name = "air", .root_source_file = b.path("src/main.zig"), .target = target, .optimize = optimize });
     exe.root_module.addImport("vaxis", vaxis.module("vaxis"));
     b.installArtifact(exe);
     const run_cmd = b.addRunArtifact(exe);

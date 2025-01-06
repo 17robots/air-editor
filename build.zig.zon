@@ -1,5 +1,5 @@
 .{
-    .name = "vaxis-test",
+    .name = "air-editor",
     .version = "0.0.1",
     .dependencies = .{
         .vaxis = .{
